@@ -42,9 +42,9 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "s [surface]resolution",
+					"text" : "s [surface]yResolution",
 					"fontname" : "Arial",
-					"patching_rect" : [ 330.0, 495.0, 118.0, 20.0 ],
+					"patching_rect" : [ 330.0, 495.0, 129.0, 20.0 ],
 					"id" : "obj-20",
 					"numinlets" : 1,
 					"fontsize" : 12.0,
@@ -145,10 +145,10 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "Interpolation time (ms)\n(The time to go from 0-127.) The interpolation time for each value change is calculated based on the difference",
-					"linecount" : 6,
+					"text" : "Fader interpolation time (ms) (time its takes to go from 0-127)",
+					"linecount" : 3,
 					"fontname" : "Arial",
-					"patching_rect" : [ 15.0, 405.0, 146.0, 89.0 ],
+					"patching_rect" : [ 15.0, 405.0, 146.0, 48.0 ],
 					"id" : "obj-5",
 					"numinlets" : 1,
 					"fontsize" : 12.0,
@@ -482,15 +482,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-16", 0 ],
-					"destination" : [ "obj-20", 0 ],
-					"hidden" : 1,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"source" : [ "obj-1", 3 ],
 					"destination" : [ "obj-2", 0 ],
 					"hidden" : 1,
@@ -556,6 +547,15 @@
 				"patchline" : 				{
 					"source" : [ "obj-1", 0 ],
 					"destination" : [ "obj-13", 0 ],
+					"hidden" : 1,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-16", 0 ],
+					"destination" : [ "obj-20", 0 ],
 					"hidden" : 1,
 					"midpoints" : [  ]
 				}
