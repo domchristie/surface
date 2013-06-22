@@ -7,9 +7,9 @@
 			"revision" : 9
 		}
 ,
-		"rect" : [ 0.0, 44.0, 376.0, 226.0 ],
+		"rect" : [ 0.0, 44.0, 376.0, 227.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 0.0, 44.0, 376.0, 226.0 ],
+		"defrect" : [ 0.0, 44.0, 376.0, 227.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"text" : "loadmess 250",
 					"outlettype" : [ "" ],
 					"fontname" : "Arial",
-					"patching_rect" : [ 150.0, 420.0, 85.0, 20.0 ],
+					"patching_rect" : [ 165.0, 420.0, 85.0, 20.0 ],
 					"id" : "obj-8",
 					"numinlets" : 1,
 					"fontsize" : 12.0,
@@ -60,7 +60,7 @@
 					"maxclass" : "newobj",
 					"text" : "s surface/interpTime",
 					"fontname" : "Arial",
-					"patching_rect" : [ 150.0, 480.0, 119.0, 20.0 ],
+					"patching_rect" : [ 165.0, 480.0, 119.0, 20.0 ],
 					"id" : "obj-7",
 					"numinlets" : 1,
 					"fontsize" : 12.0,
@@ -72,13 +72,15 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "Interpolation time (ms)",
+					"text" : "Interpolation time (ms)\n(The time to go from 0-127.) The interpolation time for each value change is calculated based on the difference",
+					"linecount" : 6,
 					"fontname" : "Arial",
-					"patching_rect" : [ 15.0, 450.0, 130.0, 20.0 ],
+					"patching_rect" : [ 15.0, 450.0, 146.0, 89.0 ],
 					"id" : "obj-5",
 					"numinlets" : 1,
 					"fontsize" : 12.0,
-					"numoutlets" : 0
+					"numoutlets" : 0,
+					"hidden" : 1
 				}
 
 			}
@@ -87,12 +89,13 @@
 					"maxclass" : "number",
 					"outlettype" : [ "int", "bang" ],
 					"fontname" : "Arial",
-					"patching_rect" : [ 150.0, 450.0, 50.0, 20.0 ],
+					"patching_rect" : [ 165.0, 450.0, 50.0, 20.0 ],
 					"id" : "obj-3",
 					"numinlets" : 1,
 					"fontsize" : 12.0,
 					"triangle" : 0,
-					"numoutlets" : 2
+					"numoutlets" : 2,
+					"hidden" : 1
 				}
 
 			}
